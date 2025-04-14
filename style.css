@@ -1,0 +1,213 @@
+/* style.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+/* Basic Reset and Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8; /* Light greyish background */
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+}
+
+.container {
+    max-width: 960px; /* Standard container width */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Navigation */
+header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50; /* Dark blue-grey */
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Highlight color */
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+.section > h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #343a40;
+    font-size: 2em;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Summary Section */
+#summary p {
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.education-item h3 {
+    font-size: 1.3em;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.education-item p.institution {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.education-item p.date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #e7f2ff; /* Light blue */
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.project-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.project-item h3.project-title {
+    font-size: 1.2em;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.project-item p.project-description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.project-item p.technologies {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.05em;
+    color: #555;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Responsive Design (Basic) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
